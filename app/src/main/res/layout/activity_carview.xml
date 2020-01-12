@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/s3"
+    tools:context=".Carview">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tmp"
+        android:text="温度:"
+        android:textSize="20sp"
+        android:textColor="#FF4040"
+        android:padding="20dp"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/tmptext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/tmp"
+        android:padding="20dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:textColor="#FF4040"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hum"
+       app:layout_constraintLeft_toRightOf="@id/tmptext"
+        android:layout_marginLeft="50dp"
+        android:text="湿度:"
+        android:textSize="20sp"
+        android:textColor="#FF4040"
+        android:padding="20dp"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/humtext"
+        app:layout_constraintLeft_toRightOf="@id/hum"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:padding="20dp"
+        android:textColor="#FF4040"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="刹车"
+        android:background="@drawable/shape"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:onClick="clickstop"
+        />
+    <Button
+        android:id="@+id/forward"
+        android:text="前进"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape"
+        app:layout_constraintBottom_toTopOf="@id/stop"
+        android:onClick="clickforward"/>
+    <Button
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="左转"
+        android:background="@drawable/shape"
+        app:layout_constraintRight_toLeftOf="@id/stop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="10dp"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:onClick="clickleft"
+        />
+    <Button
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="右转"
+        android:background="@drawable/shape"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        app:layout_constraintLeft_toRightOf="@id/stop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="clickright"
+        />
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="后退"
+        android:background="@drawable/shape"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/stop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        android:onClick="clickback"
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/s1"
+    tools:context=".Clientlogin">
+    <EditText
+        android:id="@+id/iptext"
+        android:padding="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="服 务 器 I P"
+        android:selectAllOnFocus="true"
+        android:textColorHint="#000000"
+        tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/porttext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="30dp"
+        android:hint="服务器端口"
+        android:selectAllOnFocus="true"
+        android:textColorHint="#000000"
+        app:layout_constraintTop_toBottomOf="@id/iptext"/>
+    <EditText
+        android:id="@+id/localporttext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:hint="本 地 端口"
+        android:layout_marginTop="40dp"
+        android:selectAllOnFocus="true"
+        android:textColorHint="#000000"
+        app:layout_constraintTop_toBottomOf="@id/porttext"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:textColor="#000000"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="40dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:onClick="clickbu"
+        app:layout_constraintTop_toBottomOf="@id/localporttext" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
