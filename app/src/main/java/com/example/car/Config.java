@@ -1,5 +1,4 @@
 package com.example.car;
-
 import java.net.DatagramSocket;
 
 public class Config {
