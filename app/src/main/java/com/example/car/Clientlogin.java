@@ -11,7 +11,6 @@ import android.widget.Toast;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
-
 public class Clientlogin extends AppCompatActivity {
     private EditText iptext;
     private EditText porttext;
